@@ -1,21 +1,27 @@
 {
-  "name": "kepler-demo",
+  "name": "genie_typescript_keplergl-web_side",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "kepler.gl": "^2.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-palm": "^3.1.2",
-    "react-redux": "^7.2.0",
-    "react-scripts": "3.4.1",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "kepler.gl": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-palm": "^3.3.7",
+    "react-redux": "^7.2.3",
+    "react-scripts": "4.0.3",
     "redux": "^4.0.5",
-    "styled-components": "^5.0.1",
-    "swr": "^0.1.18",
-    "typescript": "^4.3.5"
+    "styled-components": "^5.2.3",
+    "swr": "^0.5.5",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +30,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -33,9 +42,14 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version"
     ]
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "@types/react-virtualized": "^9.21.13"
   }
 }
