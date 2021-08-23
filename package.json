@@ -1,23 +1,58 @@
 {
-  "name": "vis-academy",
-  "description": "A set of Uber Visualization tutorials",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uber-common/vis-academy.git"
-  },
-  "version": "0.1.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "ocular start",
-    "clean": "rm -rf docs/*{.js,.css,index.html,appcache,fonts,images}",
-    "build": "ocular build",
-    "lint": "ocular lint",
-    "publish-docs": "npm run clean && npm run build && mv dist/* docs"
-  },
-  "dependencies": {
-    "kepler.gl": "^2.5.4"
-  },
-  "license": "MIT",
-  "private": true,
-  "devDependencies": {}
+    "name": "genie_typescript_keplergl-web_side",
+    "version": "0.1.0",
+    "private": true,
+    "keywords": [],
+    "description": "",
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.6.1",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@types/jest": "^26.0.15",
+        "@types/node": "^12.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "kepler.gl": "^2.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-palm": "^3.3.7",
+        "react-redux": "^7.2.3",
+        "react-scripts": "4.0.3",
+        "styled-components": "^5.2.3",
+        "swr": "^0.5.5",
+        "typescript": "^4.1.2",
+        "web-vitals": "^1.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "@types/react-virtualized": "^9.21.13",
+        "webpack": "^5.50.0",
+        "webpack-cli": "^4.8.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 3 chrome version",
+            "last 3 firefox version",
+            "last 3 safari version"
+        ]
+    }
 }
