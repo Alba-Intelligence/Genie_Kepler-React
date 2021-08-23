@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
-import reportWebVitals from './reportWebVitals'
 
-import store from './store'
+import store from './redux/store/store'
 import * as serviceWorker from './serviceWorker'
 import { Provider } from 'react-redux'
+
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
